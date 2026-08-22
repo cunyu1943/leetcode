@@ -98,9 +98,9 @@ export default defineConfig({
   },
 
   // 站点名
-  title: "村雨遥",
+  title: "村雨遥的 LeetCode 学习笔记",
   // 站点描述
-  description: "A VitePress Site",
+  description: "LeetCode Wiki",
   // 纯净链接
   cleanUrls: true,
   // 预演

@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "村雨遥"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "村雨遥の"
+  text: "LeetCode 学习笔记"
+  # tagline: My great project tagline
   image:
     src: imgs/site/logo.png
   actions:
