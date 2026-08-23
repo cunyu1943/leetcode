@@ -2,8 +2,16 @@ import type { DefaultTheme } from 'vitepress'
 
 export const nav: DefaultTheme.Config['nav'] = [
     { text: '🏠 首页', link: '/' },
-    { text: ' 我的主页', link: 'https://cunyu1943.github.io' },
-    { text: '📚 学习', link: '/leetcode/1-two-sum' },
+    { text: '🧑🏻‍💻 我的主页', link: 'https://cunyu1943.github.io' },
+    {
+        text: '🗺️ 学习路径',
+        items: [
+            { text: '1️⃣ LeetCode', link: '/leetcode/1-two-sum' },
+            { text: '2️⃣ 剑指 Offer', link: '/lcr/lcr-001-divide-two-integers' },
+
+        ]
+    },
+
     {
         text: '📋 开源项目',
         items: [
@@ -18,14 +26,4 @@ export const nav: DefaultTheme.Config['nav'] = [
 
         ]
     },
-    // {
-    //     text: '🎈 更多',
-    //     items: [
-    //         { text: '💳 超大流量卡', link: 'https://ym.ksjhaoka.com/?s=Ltxbbs9W330131', noIcon: true },
-    //         { text: '🗃️ 资源八百库', link: 'https://www.kdocs.cn/l/csij2u9ePmM6', noIcon: true },
-    //         { text: '🧧 薅羊毛', link: '/ads' },
-    //         { text: '💰 打赏', link: '/reward' },
-
-    //     ]
-    // },
 ]

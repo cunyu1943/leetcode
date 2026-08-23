@@ -1,10 +1,10 @@
 {
   "devDependencies": {
     "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
-    "sass-embedded": "^1.100.0",
+    "sass-embedded": "^1.103.1",
     "vitepress": "^1.6.4",
     "vitepress-plugin-group-icons": "^1.7.6",
-    "vue": "^3.5.40"
+    "vue": "^3.5.41"
   },
   "packageManager": "pnpm@10.3.0+sha256.24dd5c65d86c7d0710aba16699fbc46d74fc9acf2b419f4945207f2de9e57e23",
   "type": "module",
