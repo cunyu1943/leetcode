@@ -304,7 +304,7 @@ char* minWindow(char* s, char* t) {
 }
 ```
 
-```”```cpp [C++]
+```cpp [C++]
 class Solution {
 public:
     string minWindow(string s, string t) {
