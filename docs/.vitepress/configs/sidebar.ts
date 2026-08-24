@@ -3,6 +3,7 @@ import type { DefaultTheme } from 'vitepress'
 export const sidebar: DefaultTheme.Config['sidebar'] = {
 
     '/': [
+        { text: "学习路径", link: "/guide" },
         {
             text: "LeetCode",
             collapsed: true,
