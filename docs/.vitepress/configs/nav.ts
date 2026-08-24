@@ -9,6 +9,7 @@ export const nav: DefaultTheme.Config['nav'] = [
             { text: '0️⃣ 学习指南', link: '/guide' },
             { text: '1️⃣ LeetCode', link: '/leetcode/1-two-sum' },
             { text: '2️⃣ 剑指 Offer', link: '/lcr/lcr-001-divide-two-integers' },
+            { text: '3️⃣ 程序员面试金典', link: '/lcci/lcci-1611-diving-board' },
 
         ]
     },

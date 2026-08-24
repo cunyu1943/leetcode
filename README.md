@@ -1,6 +1,6 @@
 # 村雨遥的 LeetCode 学习笔记
 
-> 基于 [VitePress](https://vitepress.dev/) 构建的算法刷题笔记站点，记录 LeetCode 与剑指 Offer 的题解与解题思路。
+> 基于 [VitePress](https://vitepress.dev/) 构建的算法刷题笔记站点，记录 LeetCode、剑指 Offer 与程序员面试金典的题解与解题思路。
 
 在线访问：<https://cunyu1943.github.io/leetcode/>
 
@@ -8,10 +8,11 @@
 
 ## 一、项目简介
 
-本项目用于记录和分享 LeetCode 刷题过程中的题解与思路，目前共收录 **259 篇** 题解笔记，分为两大模块：
+本项目用于记录和分享 LeetCode 刷题过程中的题解与思路，目前共收录 **301 篇** 题解笔记，分为三大模块：
 
 - **LeetCode**：第 1 ~ 140 题，共 140 篇；
-- **剑指 Offer（专项突击版）**：LCR 001 ~ 140，共 119 篇。
+- **剑指 Offer（专项突击版）**：LCR 001 ~ 140，共 119 篇；
+- **程序员面试金典（LCCI）**：面试题 01 ~ 16，共 42 篇。
 
 每篇题解都遵循统一的结构：**题目描述 → 示例 → 解题思路 → 代码实现 → 复杂度分析**，方便复习与对比不同解法。
 
@@ -27,8 +28,9 @@ leetcode/
 │   │       ├── components/    # 公告、修订历史、文章元信息、首页装饰等组件
 │   │       └── style/         # 自定义 CSS
 │   ├── public/                # 静态资源（图片、favicon 等）
-│   ├── leetcode/              # LeetCode 题解（1-two-sum.md ... 140-*.md）
-│   ├── lcr/                   # 剑指 Offer 题解（lcr-001.md ... lcr-140.md）
+│   ├── leetcode/              # LeetCode 题解（leetcode/1-two-sum.md ... 140-*.md）
+│   ├── lcr/                   # 剑指 Offer 题解（lcr/lcr-001-*.md ... lcr-140.md）
+│   ├── lcci/                  # 程序员面试金典题解（lcci/lcci-0101-*.md ... lcci-1619-*.md）
 │   ├── index.md               # 站点首页
 │   └── guide.md               # 使用指南
 ├── .github/
@@ -47,6 +49,7 @@ leetcode/
 | --- | --- | --- |
 | LeetCode | `docs/src/leetcode/` | 第 1 ~ 140 题，140 篇题解 |
 | 剑指 Offer | `docs/src/lcr/` | LCR 001 ~ 140，119 篇题解 |
+| 程序员面试金典 | `docs/src/lcci/` | 面试题 01 ~ 16，42 篇题解 |
 
 ### 2. 站点能力
 
@@ -63,7 +66,7 @@ leetcode/
 
 - `docs/.vitepress/config.mts`：站点级与主题级配置
 - `docs/.vitepress/configs/nav.ts`：顶部导航
-- `docs/.vitepress/configs/sidebar.ts`：LeetCode 与剑指 Offer 分组侧边栏
+- `docs/.vitepress/configs/sidebar.ts`：LeetCode、剑指 Offer 与程序员面试金典分组侧边栏
 
 ## 四、本地运行
 
@@ -102,7 +105,7 @@ pnpm docs:preview
 
 ## 六、新增题解
 
-1. 在 `docs/src/leetcode/`（或 `docs/src/lcr/`）目录下新建 `题号-题名.md`；
+1. 在 `docs/src/leetcode/`、`docs/src/lcr/` 或 `docs/src/lcci/` 目录下新建 `题号-题名.md`；
 2. 按统一结构撰写：题目描述、示例、解题思路、代码实现、复杂度分析；
 3. 在 `docs/.vitepress/configs/sidebar.ts` 中将新题加入对应分组；
 4. 提交并推送到 `main` 分支，站点将自动重新构建与部署。
