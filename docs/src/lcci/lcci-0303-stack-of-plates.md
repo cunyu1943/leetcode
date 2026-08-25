@@ -53,11 +53,11 @@ stack.pop();    // 返回 3
 
 :::::: code-group
 
-```java [Java]
+```java [Java] 
 import java.util.*;
 
 class SetOfStacks {
-    private List<Stack<Integer>> stacks;
+    private List<Stack<Integer> > stacks;
     private int cap;
 
     public SetOfStacks(int cap) {
@@ -98,7 +98,7 @@ class SetOfStacks {
 }
 ```
 
-```python [Python]
+```python [Python] 
 class SetOfStacks:
     def __init__(self, cap: int):
         self.cap = cap
@@ -130,7 +130,7 @@ class SetOfStacks:
         return val
 ```
 
-```go [Go]
+```go [Go] 
 type SetOfStacks struct {
     stacks [][]int
     cap    int
@@ -184,7 +184,7 @@ func (this *SetOfStacks) PopAt(index int) int {
 }
 ```
 
-```c [C]
+```c [C] 
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -281,10 +281,10 @@ void freeSetOfStacks(SetOfStacks* obj) {
 }
 ```
 
-```cpp [C++]
+```cpp [C++] 
 class SetOfStacks {
 private:
-    vector<stack<int>> stacks;
+    vector<stack<int> > stacks;
     int cap;
 public:
     SetOfStacks(int cap) : cap(cap) {}
@@ -322,7 +322,7 @@ public:
 };
 ```
 
-```javascript [JavaScript]
+```javascript [JavaScript] 
 var SetOfStacks = function(cap) {
     this.cap = cap;
     this.stacks = [];
@@ -358,7 +358,7 @@ SetOfStacks.prototype.popAt = function(index) {
 };
 ```
 
-```typescript [TypeScript]
+```typescript [TypeScript] 
 class SetOfStacks {
     private stacks: number[][];
     private cap: number;
@@ -420,11 +420,11 @@ class SetOfStacks {
 
 :::::: code-group
 
-```java [Java]
+```java [Java] 
 import java.util.*;
 
 class SetOfStacks {
-    private List<Deque<Integer>> stacks;
+    private List<Deque<Integer> > stacks;
     private int cap;
 
     public SetOfStacks(int cap) {
@@ -465,7 +465,7 @@ class SetOfStacks {
 }
 ```
 
-```python [Python]
+```python [Python] 
 from collections import deque
 
 class SetOfStacks:
@@ -500,7 +500,7 @@ class SetOfStacks:
         return val
 ```
 
-```go [Go]
+```go [Go] 
 import "container/list"
 
 type SetOfStacks struct {
@@ -572,19 +572,19 @@ func (this *SetOfStacks) PopAt(index int) int {
 }
 ```
 
-```c [C]
+```c [C] 
 // C语言实现双端队列较复杂，此处采用与方法一相同的链表结构，仅为了展示不同风格，实际逻辑一致。
 // 为避免代码重复，此处省略完整实现，可参考方法一中的C代码。
 // 注：方法二在C语言中无法简单区分，故此处不重复列出，但实际回答中会提供与方法一相同的代码，并注明数据结构替换。
 ```
 
-```cpp [C++]
+```cpp [C++] 
 #include <deque>
 #include <list>
 
 class SetOfStacks {
 private:
-    list<deque<int>> stacks; // 使用 list 存储子栈，子栈使用 deque
+    list<deque<int> > stacks; // 使用 list 存储子栈，子栈使用 deque
     int cap;
 public:
     SetOfStacks(int cap) : cap(cap) {}
@@ -626,13 +626,13 @@ public:
 };
 ```
 
-```javascript [JavaScript]
+```javascript [JavaScript] 
 // 由于JavaScript没有内置双端队列，此处使用数组模拟，逻辑与方法一相同。
 // 方法二可视为使用数组，但为了区分，我们仍提供代码，实际实现与上一致。
 // 此处直接复用方法一的代码，但为了满足“多种方法”，可添加注释说明。
 ```
 
-```typescript [TypeScript]
+```typescript [TypeScript] 
 // TypeScript 同理，与方法一代码一致。
 ```
 
@@ -652,7 +652,7 @@ public:
 
 | 方法                  | 时间复杂度                    | 空间复杂度 | 特点                              |
 | --------------------- | ----------------------------- | ---------- | --------------------------------- |
-| 方法一（List<Stack>） | `push/pop O(1)`，`popAt O(n)` | `O(n)`     | 直观，推荐                        |
-| 方法二（List<Deque>） | 同上                          | `O(n)`     | 使用双端队列，Java中推荐替代Stack |
+| 方法一（`List<Stack>`） | `push/pop O(1)`，`popAt O(n)` | `O(n)`     | 直观，推荐                        |
+| 方法二（`List<Deque>`） | 同上                          | `O(n)`     | 使用双端队列，Java 中推荐替代 Stack |
 
 两种方法本质相同，数据结构选择不影响功能。**推荐使用方法一**，因为 `Stack` 类虽旧但广泛使用，且代码清晰。方法二展示了 `Deque` 的用法，可作为现代替代。
