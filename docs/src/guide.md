@@ -6,12 +6,13 @@
 
 ## 一、简介
 
-本项目是一个基于 [VitePress](https://vitepress.dev/) 构建的算法刷题笔记站点，用于记录和分享 LeetCode 与剑指 Offer 的题解。
+本项目是一个基于 [VitePress](https://vitepress.dev/) 构建的算法刷题笔记站点，用于记录和分享 LeetCode、剑指 Offer 与程序员面试金典的题解。
 
-目前共收录 **259 篇** 题解笔记，分为两大模块：
+目前共收录 **368 篇** 题解笔记，分为三大模块：
 
 - **LeetCode**：第 1 ~ 140 题，共 140 篇；
-- **剑指 Offer（专项突击版）**：LCR 001 ~ 140，共 119 篇。
+- **剑指 Offer（专项突击版）**：LCR 001 ~ 140，共 119 篇；
+- **程序员面试金典（LCCI）**：面试题 01 ~ 17，共 109 篇。
 
 每篇题解都遵循统一结构：**题目描述 → 示例 → 解题思路 → 代码实现 → 复杂度分析**，方便复习与对比不同解法。
 
@@ -35,6 +36,7 @@
 | --- | --- |
 | LeetCode 题解 | 进入第 1 ~ 140 题的题解列表 |
 | 剑指 Offer 题解 | 进入 LCR 001 ~ 140 的题解列表 |
+| 程序员面试金典 | 进入面试题 01 ~ 17（LCCI）的题解列表 |
 | 使用指南 | 当前页面 |
 
 侧边栏按题号区间对题解分组，点击即可阅读对应题解。如需调整分组，请修改 `docs/.vitepress/configs/sidebar.ts`。
@@ -115,7 +117,7 @@ pnpm docs:preview
 
 ## 六、新增题解
 
-1. 在 `docs/src/leetcode/`（LeetCode）或 `docs/src/lcr/`（剑指 Offer）目录下新建 `题号-题名.md`；
+1. 在 `docs/src/leetcode/`（LeetCode）、`docs/src/lcr/`（剑指 Offer）或 `docs/src/lcci/`（程序员面试金典）目录下新建 `题号-题名.md`；
 2. 按 [题解结构](#五题解结构) 撰写内容；
 3. 在 `docs/.vitepress/configs/sidebar.ts` 中将新题加入对应分组；
 4. 本地预览确认无误后，提交并推送到 `main` 分支，站点将自动重新构建与部署。
